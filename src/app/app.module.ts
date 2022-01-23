@@ -10,6 +10,10 @@ import { ShowdownModule } from 'ngx-showdown';
 import { FormsModule } from '@angular/forms';
 import { DocumentPageComponent } from './document-page/document-page.component';
 import { DocumentUpdateComponent } from './document-update/document-update.component';
+import { CreateDocumentComponent } from './create-document/create-document.component';
+import { CreateCarnetComponent } from './create-carnet/create-carnet.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { DocumentUpdateComponent } from './document-update/document-update.compo
     NavbarComponent,
     CarnetPageComponent,
     DocumentPageComponent,
-    DocumentUpdateComponent
+    DocumentUpdateComponent,
+    CreateDocumentComponent,
+    CreateCarnetComponent,
+    HomepageComponent,
+    UpdateCarnetComponent
   ],
   imports: [
     BrowserModule,
