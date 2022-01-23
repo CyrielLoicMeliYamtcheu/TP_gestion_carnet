@@ -29,9 +29,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": ["showdown"],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/styles.css"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
