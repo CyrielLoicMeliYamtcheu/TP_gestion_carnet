@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ShowdownComponent, ShowdownConverter } from 'ngx-showdown';
-import * as showdown from 'showdown';
 
 @Component({
   selector: 'app-root',

@@ -3,28 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TitreComponent } from './titre/titre.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CarnetPageComponent } from './carnet-page/carnet-page.component';
-import { ShowdownModule } from 'ngx-showdown';
-import { FormsModule } from '@angular/forms';
-import { DocumentPageComponent } from './document-page/document-page.component';
-import { DocumentUpdateComponent } from './document-update/document-update.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitreComponent,
-    NavbarComponent,
-    CarnetPageComponent,
-    DocumentPageComponent,
-    DocumentUpdateComponent
+    HomePageComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ShowdownModule.forRoot({emoji: true, noHeaderId: true, flavor: 'github'}),
-    FormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
