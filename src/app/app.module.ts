@@ -5,14 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateDocumentComponent } from './create-document/create-document.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateDocumentComponent
+    CreateDocumentComponent,
+    HomePageComponent
   ],
   imports: [
-
     BrowserModule,
     AppRoutingModule,
     FormsModule
