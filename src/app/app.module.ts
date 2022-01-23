@@ -12,9 +12,9 @@ import { CreateDocumentComponent } from './create-document/create-document.compo
     CreateDocumentComponent
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
-
     FormsModule
   ],
   providers: [],
