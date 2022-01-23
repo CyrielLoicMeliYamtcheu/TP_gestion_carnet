@@ -28,7 +28,7 @@ import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
     CreateDocumentComponent,
     CreateCarnetComponent,
     HomepageComponent,
-    UpdateCarnetComponent
+    UpdateCarnetComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
