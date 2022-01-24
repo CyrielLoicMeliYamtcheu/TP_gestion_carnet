@@ -1,4 +1,6 @@
+import { CarnetService } from './../services/carnet.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-carnet',
@@ -6,8 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-carnet.component.scss']
 })
 export class CreateCarnetComponent implements OnInit {
+  carnet: any;
+  constructor(public carnetService : CarnetService, public router : Router  ) {
+    this.carnet = {
+      nom: '',
+      description: ''
+    };
 
-  constructor() { }
+   }
+
+   addCarnet(): void{
+    this.carnetService.addCarnet(this.carnet);
+    this.router.navigate(['/carnet']);
+   }
+
+   reset(): void{
+     this.carnet = {
+      nom: '',
+      description: ''
+     };
+   }
 
   ngOnInit(): void {
   }

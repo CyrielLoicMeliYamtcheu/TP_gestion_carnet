@@ -32,10 +32,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Jeux</td>
-      <td>Le meilleur gagne </td>
+    <tr *ngFor="let elem of listeCarnet; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ elem.nom }}</td>
+      <td>{{ elem.description }}</td>
       <td>
         <button
           class="btn btn-warning btn-sm"

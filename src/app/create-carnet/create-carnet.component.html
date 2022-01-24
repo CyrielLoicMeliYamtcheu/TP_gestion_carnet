@@ -6,15 +6,35 @@
   </div>
   <div class="alert alert-danger"  role="alert" style="width: 100%">
       <label for="floatingTextarea2">Veuillez saisir le nom du carnet </label>
-      <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Veuillez entrez le nom">
+
+      <input type="test" class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder=" Veuillez entrez le nom"
+      [(ngModel)] = "carnet.nom"
+      >
+
       <label for="floatingTextarea2">Veuillez saisir la description </label>
-      <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 90px" style="width: 50%"></textarea>
+      <textarea class="form-control"
+      placeholder="" id="floatingTextarea2"
+      style="height: 90px" style="width: 50%"
+      [(ngModel)] = "carnet.description"
+      ></textarea>
       <br>
           <div class="form-floating">
               <div class="col-md-12 text-center ">
                   <button type="button" class="btn btn-success" [routerLink]="['/carnet']">Retour</button>&nbsp;
-                  <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Modifier</button>&nbsp;
-                  <button type="button" class="btn btn-secondary">Annuler</button>
+
+                  <button type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="button"
+                  autocomplete="off" aria-pressed="true"
+                  (click)="addCarnet()"
+                  >Enregistrer</button>&nbsp;
+
+                  <button type="button" class="btn btn-secondary"
+                  (click)="reset()"
+                  >Annuler</button>
               <div>
           <div>
   </div>

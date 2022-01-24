@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarnetService } from '../services/carnet.service';
 
 @Component({
   selector: 'app-carnet-page',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarnetPageComponent implements OnInit {
 
-  constructor() { }
+  listeCarnet: any;
+  constructor(public carnetService : CarnetService) { }
 
   ngOnInit(): void {
+    this.listeCarnet = this.carnetService.getListeCarnet();
   }
 
 }
