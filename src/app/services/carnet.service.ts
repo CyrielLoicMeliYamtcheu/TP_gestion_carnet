@@ -50,5 +50,15 @@ else{
 }
 
 }
+ deleteCarnet(id:number):void{
+   let elem=this.getcarnetById(id);
+   if(!elem.id) alert('Erreur lors de la suppression');
+   else{
+     let indice=this.listeCarnet.indexOf(elem);
+     this.listeCarnet.splice(indice,1);
+     localStorage.setItem("carnet",JSON.stringify(this.listeCarnet));
+     this.getListeCarnet();
+   }
+ }
 
 }
