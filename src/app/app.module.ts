@@ -17,7 +17,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
 import { SearchcarnetPipe } from './searchcarnet.pipe';
 
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     UpdateCarnetComponent,
     SearchcarnetPipe,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule, Ng2SearchPipeModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
