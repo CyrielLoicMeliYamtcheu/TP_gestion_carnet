@@ -1,5 +1,3 @@
-
-
 <app-titre
   titre="Gestion des documents"
   vignette="Formulaire Modification"
@@ -7,25 +5,22 @@
 
 <section class="row">
   <section class="col-md-6">
-        <div class="form-group mb-3">
-          <textarea
-            class="form-control"
-            rows = "10"
-            cols="20"
-            placeholder="Veuillez saisir les informations nom et catégorie au format markdown"
-          ></textarea>
-        </div>
-        <hr />
+    <div class="form-group mb-3">
+      <textarea
+        class="form-control"
+        rows="10"
+        cols="20"
+        placeholder="Veuillez saisir les informations nom et catégorie au format markdown"
+      ></textarea>
+    </div>
+    <hr />
 
-        <a class="btn btn-outline-secondary" [routerLink]="['/document']">
-          Retour
-        </a>
-        <span class="float-end">
-          <button class="btn btn-warning">Enregistrer</button
-          >&nbsp;
-          <button class="btn btn-secondary">Annuler</button>
-        </span>
-
+    <a class="btn btn-outline-secondary" [routerLink]="['/document']">
+      Retour
+    </a>
+    <span class="float-end">
+      <button class="btn btn-warning">Enregistrer</button>&nbsp;
+      <button class="btn btn-secondary">Annuler</button>
+    </span>
   </section>
 </section>
-

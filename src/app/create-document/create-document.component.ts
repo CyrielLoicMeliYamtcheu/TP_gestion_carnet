@@ -10,6 +10,8 @@ export class CreateDocumentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
 
 }
