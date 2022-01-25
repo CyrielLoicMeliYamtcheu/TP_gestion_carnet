@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as showdown from 'showdown';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TP_gestion_carnets';
-
-/*
 
  text: string = `## A cool link Hello
  <a href="javascript:alert('Hello!')">click me</a>`;
@@ -19,7 +18,7 @@ export class AppComponent {
  converter = new showdown.Converter();
  html = this.converter.makeHtml(this.text);
 
-*/
+
 
 
 }

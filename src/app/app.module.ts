@@ -33,7 +33,7 @@ import { SearchcarnetPipe } from './searchcarnet.pipe';
     UpdateCarnetComponent,
     SearchcarnetPipe,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule,ShowdownModule],
   providers: [],
   bootstrap: [AppComponent]
 })
