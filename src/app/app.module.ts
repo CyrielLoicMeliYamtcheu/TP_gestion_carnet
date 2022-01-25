@@ -15,6 +15,7 @@ import { CreateDocumentComponent } from './create-document/create-document.compo
 import { CreateCarnetComponent } from './create-carnet/create-carnet.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
+import { SearchcarnetPipe } from './searchcarnet.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
     CreateCarnetComponent,
     HomepageComponent,
     UpdateCarnetComponent,
+    SearchcarnetPipe,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

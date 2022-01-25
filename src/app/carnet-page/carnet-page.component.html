@@ -12,8 +12,8 @@
   <section class="col-md-6">
 
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <input type="text" class="form-control me-2" placeholder="veuillez saisir le nom" />
-    <button class="btn btn-info me-md-2" type="button">Rechercher</button>
+    <input type="text" class="form-control me-2" [(ngModel)]="search" placeholder="veuillez saisir le nom" />
+    <button class="btn btn-info me-md-2"  type="button">Rechercher</button>
 
     </div>
   </section>
@@ -32,8 +32,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let elem of listeCarnet; let i = index">
-      <td>{{ i + 1 }}</td>
+    <tr *ngFor="let elem of listeCarnet | searchcarnet: search; let i = index">
+      <td>{{ i + 1 }}</td> <!-- | searchcarnet: search  --> 
       <td>{{ elem.nom }}</td>
       <td>{{ elem.description }}</td>
       <td>
