@@ -1,11 +1,11 @@
 
-
-<app-titre titre="Gestion des Documents pour le carnet ..... " vignette="Liste des documents"></app-titre>
+<!-- "Gestion des Documents pour le carnet " -->
+<app-titre [titre] = "nom_carnet" vignette="Liste des documents"></app-titre>
 
 <section class="row">
   <section class="col-md-6">
     <div class="input-group mb-3">
-      <a class="btn btn-primary" [routerLink]="['/document/add']">
+      <a class="btn btn-primary" [routerLink]="['/document/'+ id_carnet +'/add']">
         + Créer un document
       </a>
       </div>

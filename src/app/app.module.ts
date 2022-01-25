@@ -15,6 +15,7 @@ import { CreateDocumentComponent } from './create-document/create-document.compo
 import { CreateCarnetComponent } from './create-carnet/create-carnet.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
+import { SearchcarnetPipe } from './searchcarnet.pipe';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
@@ -31,6 +32,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CreateCarnetComponent,
     HomepageComponent,
     UpdateCarnetComponent,
+    SearchcarnetPipe,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, Ng2SearchPipeModule],
   providers: [],

@@ -14,9 +14,9 @@ const routes: Routes = [
   { path: 'carnet', component: CarnetPageComponent },
   { path: 'carnet/add', component: CreateCarnetComponent },
   { path: 'carnet/update/:id', component: UpdateCarnetComponent },
-  { path: 'document', component: DocumentPageComponent},
-  { path: 'document/add', component: CreateDocumentComponent},
-  { path: 'document/update/:id', component: DocumentUpdateComponent}
+  { path: 'document/:id', component: DocumentPageComponent},
+  { path: 'document/:id/add', component: CreateDocumentComponent},
+  { path: 'document/:id/update/:id', component: DocumentUpdateComponent}
 ];
 
 @NgModule({
