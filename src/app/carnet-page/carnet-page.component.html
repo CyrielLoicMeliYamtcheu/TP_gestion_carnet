@@ -32,9 +32,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let elem of listeCarnet; let i = index">
+    <tr *ngFor="let elem of listeCarnet;  let i = index">
+
       <td>{{ i + 1 }}</td>
-      <td>{{ elem.nom }}</td>
+      <td>{{ elem.nom  }}</td>
       <td>{{ elem.description }}</td>
       <td>
         <button
