@@ -1,32 +1,80 @@
-<div class="p-5 mb-4 bg-light rounded-3 mx-auto col-md-6">
-  <div class="container-fluid py-10"></div>
-  <div class="p-3 mb-2 bg-danger text-white" role="alert">
-    <h3 class="text-center">Création des documents pour le carnet</h3>
-  </div>
-  <div class="form-floating">
-    <textarea
-      class="form-control"
-      placeholder="Leave a comment here"
-      id="floatingTextarea2"
-      style="height: 150px"
-    ></textarea>
-    <label for="floatingTextarea2">
-      Veuillez saisir les informations: nom et catégorie en markdown</label
-    >&nbsp;
-    <div class="container bg-light">
-      <div class="col-md-12 text-center">
-        <button
-          type="button"
-          class="btn btn-success"
-          [routerLink]="['/document/' + id_carnet]"
-        >
-          Retour
-        </button>
-        &nbsp; &nbsp;
-        <button type="button" class="btn btn-warning">Afficher en HTML</button>
-        &nbsp; &nbsp;
-        <button type="button" class="btn btn-secondary">Annuler</button>
+
+  <div class="p-5 mb-4 rounded-3 mx-auto col-md-6">
+    <div class="p-3 mb-2 bg-danger text-white" style="width: 100%" Align="Center">
+      <h3>création des documents</h3>
+    </div>
+    <div class="alert alert-danger" role="alert" style="width: 100%">
+      <label for="floatingTextarea2">Veuillez saisir le nom du document </label>
+  
+      <input
+        type="test"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder=" Veuillez entrez le nom"
+        [(ngModel)]="Doc.nom"
+       
+      />
+  
+      <label for="floatingTextarea2">Veuillez saisir la categorie du document </label>
+      <textarea
+        class="form-control"
+        placeholder=""
+        id="floatingTextarea2"
+        style="height: 90px"
+        style="width: 50%"
+        [(ngModel)]="Doc.categorie"
+      ></textarea>
+      <br />
+      <div class="form-floating">
+        <div class="col-md-12 text-center">
+          <button
+            type="button"
+            class="btn btn-success"
+            [routerLink]="['/document/' + id_carnet]"
+          >
+            Retour</button
+          >&nbsp;
+  
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="button"
+            autocomplete="off"
+            aria-pressed="true"
+            (click)="addDoc()"
+          
+          >
+            Enregistrer</button>&nbsp;
+  
+          <button type="button" class="btn btn-secondary">
+            Annuler
+          </button>
+          <div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+  
+    
