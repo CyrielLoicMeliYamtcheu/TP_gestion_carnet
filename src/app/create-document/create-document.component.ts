@@ -14,6 +14,7 @@ export class CreateDocumentComponent implements OnInit {
   constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute) { }
 
   // format = { nom : "#doc1", categorie:"##cat1"}
+
   ngOnInit(): void {
 
     let id: any;
