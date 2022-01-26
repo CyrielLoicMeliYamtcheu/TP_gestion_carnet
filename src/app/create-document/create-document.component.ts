@@ -11,7 +11,26 @@ export class CreateDocumentComponent implements OnInit {
 
   carnets: any;
   id_carnet: any;
-  constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute) { }
+  Doc : any;
+
+  constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute) 
+  { 
+     this.Doc = {nom: "", categorie: ""};
+
+  }
+  
+  
+  addDoc(): void{
+    this.carnetService.addDocument(this.Doc, this.carnets);
+    this.router.navigate(['/document/' + this.id_carnet]);
+   }
+
+   reset(): void{
+     this.Doc = {
+      nom: '',
+      categorie: ''
+     };
+   }
 
   // format = { nom : "#doc1", categorie:"##cat1"}
   ngOnInit(): void {

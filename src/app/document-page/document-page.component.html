@@ -38,10 +38,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>doc1</td>
-      <td>Contenue</td>
+    <tr *ngFor="let elem of listeDocument; let i = index" >
+      <td>{{ i + 1 }}</td>
+      <td> {{ elem.nom }} </td>
+      <td> {{elem.categorie }} </td>
       <td>
         <button
           class="btn btn-warning btn-sm"
