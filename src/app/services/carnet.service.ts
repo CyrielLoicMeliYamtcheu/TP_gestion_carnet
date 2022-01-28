@@ -78,11 +78,11 @@ else{
 
 }
 
-/*
+
 updateDocument(Doc: any): void{
   const id = Doc.id;
   let elem = this.getDocById(id);
-  console.log("Allooooo");
+  //console.log("Allooooo");
   console.log(elem);
   if (!elem.id) alert ('Erreur lors de la modification');
   else{
@@ -92,7 +92,7 @@ updateDocument(Doc: any): void{
     this.getListeDocument();
   }
 
-}*/
+}
 
  deleteCarnet(id:number):void{
    let elem=this.getcarnetById(id);
