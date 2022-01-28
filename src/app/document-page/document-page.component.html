@@ -17,7 +17,7 @@
       <input
         type="text"
         class="form-control me-2"
-        placeholder="Veuillez saisir le nom"
+        placeholder="Veuillez saisir le nom" [(ngModel)]="search"
       />
       <button class="btn btn-info me-md-2" type="button">Rechercher</button>
     </div>
@@ -38,7 +38,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let elem of listeDocument; let i = index" >
+    <tr *ngFor="let elem of listeDocument | searchcarnet: search; let i = index" >
       <td>{{ i + 1 }}</td>
       <td> {{ elem.nom }} </td>
       <td> {{elem.categorie }} </td>
@@ -51,7 +51,7 @@
         </button>
       </td>
       <td>
-        <button class="btn btn-danger btn-sm" >Supprimer</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteDocument(elem.id)" >Supprimer</button>
       </td>
       <td>
         <button class="btn btn-primary btn-sm">Voir HTML</button>

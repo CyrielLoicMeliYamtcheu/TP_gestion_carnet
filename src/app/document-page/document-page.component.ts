@@ -16,11 +16,21 @@ export class DocumentPageComponent implements OnInit {
   id_carnet_doc: any;
   listeDocumentByIdCarnet: string[] = [];
   Doc: string[] = [];
+  search: any;
   nom_carnet: string = "Gestion des documents pour le "
   constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute) {
-
+    this.search = "";
 
    }
+
+
+   deleteDocument(id:number):void{
+    let result=confirm("etes vous sure de vouloir supprimer le document?") ;
+    if (result)
+    this.carnetService.deleteDocument(id);
+
+  }
+
 
   ngOnInit(): void {
     let id: any;
@@ -34,19 +44,19 @@ export class DocumentPageComponent implements OnInit {
     //console.log(this.id_carnet);
     //console.log(this.nom_carnet);
 
-    this.listeDocument = this.carnetService.getListeDocument();    
+    this.listeDocument = this.carnetService.getListeDocument();
    // console.log(this.listeDocument.length);
 
     for(let i = 0; i < this.listeDocument.length; i ++){
-      
+
      // console.log(this.id_carnet);
-      
+
 
       if(this.listeDocument[i].id_carnet == this.id_carnet){
          // console.log("hello test");
          // console.log(this.listeDocument[i]);
            this.listeDocumentByIdCarnet.push(this.listeDocument[i]);
-           
+
       }
 
     }
@@ -56,9 +66,9 @@ export class DocumentPageComponent implements OnInit {
      // console.log("bjr");
       this.listeDocument.push(this.listeDocumentByIdCarnet[i]);
      // console.log(this.listeDocument);
-    
+
     }
-   
+
 
   }
 

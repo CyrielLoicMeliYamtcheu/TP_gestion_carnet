@@ -60,7 +60,7 @@ getDocById(id: number): any {
 
 getDocumentById(carnet: any): any {
   return this.listeDocument.find((elem: any) => elem.id_carnet == carnet.id);
-  
+
 }
 
 updateCarnet(carnet: any): void{
@@ -106,7 +106,7 @@ updateDocument(Doc: any): void{
 
  }
 
-   /*
+
    deleteDocument(id:number):void{
     let elem=this.getDocById(id);
     if(!elem.id) alert('Erreur lors de la suppression');
@@ -115,7 +115,7 @@ updateDocument(Doc: any): void{
       this.listeDocument.splice(indice,1);
       localStorage.setItem("Doc",JSON.stringify(this.listeDocument));
       this.getListeDocument();
-    } 
- }*/
+    }
+ }
 
 }

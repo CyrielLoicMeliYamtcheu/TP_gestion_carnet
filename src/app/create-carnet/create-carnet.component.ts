@@ -9,13 +9,18 @@ import { Router } from '@angular/router';
 })
 export class CreateCarnetComponent implements OnInit {
   carnet: any;
+  search: any;
+
   constructor(public carnetService : CarnetService, public router : Router  ) {
     this.carnet = {
       nom: '',
       description: ''
     };
 
-   }
+
+  }
+
+
 
    addCarnet(): void{
     this.carnetService.addCarnet(this.carnet);

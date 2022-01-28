@@ -13,13 +13,12 @@ export class CreateDocumentComponent implements OnInit {
   id_carnet: any;
   Doc : any;
 
-  constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute) 
-  { 
+  constructor(public carnetService: CarnetService, public router: Router, public route: ActivatedRoute)
+  {
      this.Doc = {nom: "", categorie: ""};
 
   }
-  
-  
+
   addDoc(): void{
     this.carnetService.addDocument(this.Doc, this.carnets);
     this.router.navigate(['/document/' + this.id_carnet]);
