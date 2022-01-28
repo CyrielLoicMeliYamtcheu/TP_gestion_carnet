@@ -35,27 +35,27 @@ export class DocumentPageComponent implements OnInit {
     //console.log(this.nom_carnet);
 
     this.listeDocument = this.carnetService.getListeDocument();    
-    console.log(this.listeDocument.length);
+   // console.log(this.listeDocument.length);
 
     for(let i = 0; i < this.listeDocument.length; i ++){
       
-      console.log(this.id_carnet);
+     // console.log(this.id_carnet);
       
 
       if(this.listeDocument[i].id_carnet == this.id_carnet){
-          console.log("hello test");
-          console.log(this.listeDocument[i]);
+         // console.log("hello test");
+         // console.log(this.listeDocument[i]);
            this.listeDocumentByIdCarnet.push(this.listeDocument[i]);
            
       }
 
     }
     this.listeDocument = [];
-    console.log(this.listeDocumentByIdCarnet);
+   // console.log(this.listeDocumentByIdCarnet);
     for(let i = 0; i < this.listeDocumentByIdCarnet.length; i ++){
-      console.log("bjr");
+     // console.log("bjr");
       this.listeDocument.push(this.listeDocumentByIdCarnet[i]);
-      console.log(this.listeDocument);
+     // console.log(this.listeDocument);
     
     }
    
