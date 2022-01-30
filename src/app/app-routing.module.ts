@@ -8,6 +8,7 @@ import { CarnetPageComponent } from './carnet-page/carnet-page.component';
 import { DocumentPageComponent } from './document-page/document-page.component';
 import { DocumentUpdateComponent } from './document-update/document-update.component';
 import { CreateCarnetComponent } from './create-carnet/create-carnet.component';
+import { PageHtmlComponent } from './page-html/page-html.component';
 
 const routes: Routes = [
   { path: '' , component: HomepageComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'carnet/update/:id', component: UpdateCarnetComponent },
   { path: 'document/:id', component: DocumentPageComponent},
   { path: 'document/:id/add', component: CreateDocumentComponent},
-  { path: 'document/:id/update/:id', component: DocumentUpdateComponent}
+  { path: 'document/:id/update/:id', component: DocumentUpdateComponent},
+  { path: 'document/:id/pagehtml/:id', component: PageHtmlComponent}
 ];
 
 @NgModule({

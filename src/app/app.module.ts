@@ -16,6 +16,7 @@ import { CreateCarnetComponent } from './create-carnet/create-carnet.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateCarnetComponent } from './update-carnet/update-carnet.component';
 import { SearchcarnetPipe } from './searchcarnet.pipe';
+import { PageHtmlComponent } from './page-html/page-html.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { SearchcarnetPipe } from './searchcarnet.pipe';
     HomepageComponent,
     UpdateCarnetComponent,
     SearchcarnetPipe,
+    PageHtmlComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule,ShowdownModule],
   providers: [],
