@@ -54,7 +54,7 @@
         <button class="btn btn-danger btn-sm" (click)="deleteDocument(elem.id)" >Supprimer</button>
       </td>
       <td>
-        <button class="btn btn-primary btn-sm" [routerLink]="['/document/'+id_carnet +'/pagehtml'+ elem.id]">Voir HTML</button>
+        <button class="btn btn-primary btn-sm" [routerLink]="['/document/'+ id_carnet + '/pagehtml/'+ elem.id]">Voir HTML</button>
       </td>
     </tr>
   </tbody>
