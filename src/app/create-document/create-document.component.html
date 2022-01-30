@@ -1,3 +1,45 @@
+<app-titre
+  titre="Gestion des Documents"
+  vignette="Formulaire de création des documents"
+></app-titre>
+
+<section class="row">
+  <section class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="form-group mb-3">
+          <label>Nom</label>
+          <input type="text" class="form-control" placeholder=" Veuillez entrez le nom au format markdown"
+          [(ngModel)]="Doc.nom" />
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Description</label>
+          <textarea
+            class="form-control" placeholder="Veuillez saisir la categorie au format markdown"
+            [(ngModel)]="Doc.categorie"
+          ></textarea>
+        </div>
+
+        <hr />
+
+        <a class="btn btn-outline-secondary" [routerLink]="['/document/' + id_carnet]">
+          Retour
+        </a>
+        <span class="float-end">
+          <button class="btn btn-success" (click)="addDoc()">Enregistrer</button
+          >&nbsp;
+          <button (click)="reset()" class="btn btn-secondary">Annuler</button>
+        </span>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+<!--
 <div class="p-5 mb-4 rounded-3 mx-auto col-md-6">
   <div class="p-3 mb-2 bg-danger text-white" style="width: 100%" Align="Center">
     <h3>création des documents</h3>
@@ -55,3 +97,5 @@
     </div>
   </div>
 </div>
+
+-->

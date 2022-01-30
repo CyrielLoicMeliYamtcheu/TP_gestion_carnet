@@ -21,8 +21,15 @@ export class CreateDocumentComponent implements OnInit {
   }
 
   addDoc(): void {
-    this.carnetService.addDocument(this.Doc, this.carnets);
-    this.router.navigate(['/document/' + this.id_carnet]);
+    this.Doc.nom = this.Doc.nom.trim();
+    this.Doc.categorie = this.Doc.trim();
+    if (this.Doc.nom.lenght == 0 && this.Doc.categorie.length == 0) {
+      console.log('Erreur champs vides!!!');
+      alert('Veuillez saisir les champs');
+    } else {
+      this.carnetService.addDocument(this.Doc, this.carnets);
+      this.router.navigate(['/document/' + this.id_carnet]);
+    }
   }
 
   reset(): void {
@@ -31,8 +38,6 @@ export class CreateDocumentComponent implements OnInit {
       categorie: '',
     };
   }
-
-  // format = { nom : "#doc1", categorie:"##cat1"}
 
   ngOnInit(): void {
     let id: any;

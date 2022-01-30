@@ -1,3 +1,46 @@
+<app-titre titre="Gestion des Carnets" vignette="Formulaire Ajout"></app-titre>
+
+<section class="row">
+  <section class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="form-group mb-3">
+          <label>Nom</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=" Veuillez entrez le nom"
+            [(ngModel)]="carnet.nom"
+          />
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Description</label>
+          <textarea
+            class="form-control"
+            [(ngModel)]="carnet.description"
+          ></textarea>
+        </div>
+
+        <hr />
+
+        <a class="btn btn-outline-secondary" [routerLink]="['/carnet']">
+          Retour
+        </a>
+        <span class="float-end">
+          <button class="btn btn-success" (click)="addCarnet()">
+            Enregistrer</button
+          >&nbsp;
+          <button (click)="reset()" class="btn btn-secondary">Annuler</button>
+        </span>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!--
+
+
 <div class="p-5 mb-4 rounded-3 mx-auto col-md-6">
   <div class="p-3 mb-2 bg-danger text-white" style="width: 100%" Align="Center">
     <h3>création des carnets</h3>
@@ -55,3 +98,5 @@
     </div>
   </div>
 </div>
+
+-->
