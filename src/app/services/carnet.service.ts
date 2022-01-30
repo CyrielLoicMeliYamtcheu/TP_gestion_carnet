@@ -98,6 +98,8 @@ export class CarnetService {
 
   deleteDocument(id: number): void {
     let elem = this.getDocById(id);
+    console.log("allloooo");
+    console.log(elem);
     if (!elem.id) alert('Erreur lors de la suppression');
     else {
       let indice = this.listeDocument.indexOf(elem);

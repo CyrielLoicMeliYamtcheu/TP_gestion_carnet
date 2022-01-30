@@ -22,8 +22,8 @@ export class CreateDocumentComponent implements OnInit {
 
   addDoc(): void {
     this.Doc.nom = this.Doc.nom.trim();
-    this.Doc.categorie = this.Doc.trim();
-    if (this.Doc.nom.lenght == 0 && this.Doc.categorie.length == 0) {
+    this.Doc.categorie = this.Doc.categorie.trim();
+    if (this.Doc.nom.length == 0 && this.Doc.categorie.length == 0) {
       console.log('Erreur champs vides!!!');
       alert('Veuillez saisir les champs');
     } else {
