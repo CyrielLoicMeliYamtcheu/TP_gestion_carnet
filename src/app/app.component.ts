@@ -14,10 +14,9 @@ export class AppComponent {
  sanitize:boolean = true;
  options = {emoji: true}
 
-// options : showdown.ShowdownOptions = {noHeaderId:true};
+// options : showdown.ShowdownOptions = {noHeaderId
  converter = new showdown.Converter();
  html = this.converter.makeHtml(this.text);
-
 
 
 
