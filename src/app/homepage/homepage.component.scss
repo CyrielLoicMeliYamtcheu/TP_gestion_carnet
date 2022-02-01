@@ -1,0 +1,41 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+html{
+    font-size: 70.5%;
+}
+
+.hero{
+    
+    min-height: 82vh;
+    background: linear-gradient(rgb(0,0,0,0.9),transparent), url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #2edfb9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+.hero h3{
+    padding: 10rem;
+}
+
+h1{
+
+    text-shadow: 5px 5px 10px #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+}
+button{
+    padding: 0.5rem 0.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
