@@ -7,6 +7,7 @@ import { elementAt } from 'rxjs';
 export class CarnetService {
   listeCarnet: any;
   listeDocument: any;
+  listeDocumentByIdCarnet: string[] = [];
   constructor() {
     this.listeCarnet = [];
     this.listeDocument = [];
@@ -105,7 +106,9 @@ export class CarnetService {
       let indice = this.listeDocument.indexOf(elem);
       this.listeDocument.splice(indice, 1);
       localStorage.setItem('Doc', JSON.stringify(this.listeDocument));
-      this.getListeDocument();
+       this.getListeDocument();
     }
   }
+
+
 }

@@ -40,6 +40,9 @@ export class DocumentPageComponent implements OnInit {
     this.id_carnet = this.carnet.id;
 
     this.listeDocument = this.carnetService.getListeDocument();
+    // this.listeDocument = this.carnetService.getListDocument(this.id_carnet);
+
+
     for (let i = 0; i < this.listeDocument.length; i++) {
       if (this.listeDocument[i].id_carnet == this.id_carnet) {
         this.listeDocumentByIdCarnet.push(this.listeDocument[i]);
@@ -49,6 +52,9 @@ export class DocumentPageComponent implements OnInit {
     for (let i = 0; i < this.listeDocumentByIdCarnet.length; i++) {
       this.listeDocument.push(this.listeDocumentByIdCarnet[i]);
     }
+
+    
+
   }
-  
+
 }
